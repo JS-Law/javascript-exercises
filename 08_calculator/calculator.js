@@ -20,17 +20,28 @@ const sum = function(arr) {
   }
 };
 
-const multiply = function(num, nums) {
-  let product = num * nums;
+const multiply = function(arr) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    product *= arr[i];
+  }
   return product;
 };
 
-const power = function() {
-	
+const power = function(power, of) {
+	let product = 1
+  for (let i = 0; i < of; i++) {
+    product *= power;
+  }
+  return product;
 };
 
-const factorial = function() {
-	
+const factorial = function(factor) {
+	let value = 1;
+  for (let i = 1; i <= factor; i++) {
+    value *= i; 
+  }
+  return value;
 };
 
 // Do not edit below this line
